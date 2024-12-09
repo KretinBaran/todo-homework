@@ -1,0 +1,111 @@
+.wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app {
+    width: 650px;
+    height: 800px;
+    background-color: #E6E6E6;
+    border-radius: 15px;
+    padding: 45px 60px;
+    display: grid;
+    grid-template-rows: 66px 621px;
+    gap: 22px;
+}
+
+.app__controls {
+    display: grid;
+    grid-template-columns: auto 160px;
+}
+
+.app__controls-input {
+    border: none;
+    border-radius: 10px 0 0 10px;
+    background-color: #ffff;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+.app__controls-input:focus-visible {
+    outline: none;
+}
+
+.app__controls-button {
+    border: none;
+    border-radius: 0 10px 10px 0;
+    background-color: #FBCC28;
+}
+
+.app__list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #ffff;
+    overflow: auto;
+}
+
+
+.app__list-checkbox {
+    width: 20px;
+    height: 20px;
+}
+.app__list-checkbox:hover {
+    cursor: pointer;
+}
+
+.app__list-item-text {
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+.app__list-item {
+    background-color: #FFEBEB;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: space-between;
+    padding: 20px 17px; 
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.app__list-item-done {
+        background-color: #b8f7be;
+        display: flex;
+        align-items: center;
+        text-align: left;
+        justify-content: space-between;
+        padding: 20px 17px; 
+        border-radius: 10px;
+        text-decoration: line-through;
+        cursor: pointer;
+        
+    }
+
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+
